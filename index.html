@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just For Awareness</title>
+</head>
+<style>
+    body
+    {
+        display: grid;
+        align-self:center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #222; 
+    }
+    .container
+    {
+        display: grid;
+        margin: 40px;
+        grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+        grid-template-rows:minmax(100px,auto) ;
+        position: relative;
+        grid-auto-flow: dense;
+        grid-gap: 10px;
+    }
+    .container .box
+    {
+        background: #333;
+        padding: 20px;
+        display: grid;
+        place-items:centre;
+        text-align: center;
+        color: #fff;
+        transition: 0.5s;
+    }
+    .container .box:hover
+    {
+        background: #e91e63;
+
+    }
+    .container .box img
+    {
+        position: relative;
+        max-width: 100px;
+        margin-bottom: 10px;
+    }
+    .container .box:nth-child(1)
+    {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .container .box:nth-child(2)
+    {
+        grid-column: span 1;
+        grid-row: span 2;
+    } 
+    .container .box:nth-child(4)
+    {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="content">
+                <img src="img 1.png" width="150px" height="150px">
+                <p>wash hands with soap and water after touching animal and animal products</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="img 2.png" width="150px" height="150px">
+                <p>when coughing and sneezing cover mouth and nose with flexed elbow or tissue</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="img3.png" width="150px" height="150px">
+                <p>Avoid travel if you have a fever and cough.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="img4.png" width="150px" height="150px">
+                <p>If you have a fever,cough and difficulty breathing seek medical care early</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="img 5.png" width="150px" height="150px">
+                <p>if you are coughing or sneezing,wear a mask and must know about how to use it and dispose of it properly</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="img6.png" width="150px" height="150px">
+                <p>Avoid close contact with animals that are sick</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="img7.png" width="150px" height="150px">
+                <p>Eat only well-cooked food</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
